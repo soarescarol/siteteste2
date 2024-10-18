@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="src/styles/styles.css">
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <title>Landing page - Matemática</title>
+
+    <style>
+        body {
+            background-color: #00bf63;
+        }
+
+        #nav_logo {
+            color: #00bf63;
+        }
+
+        .btn-default {
+            background-color: #00bf63;
+            color: white;
+        }
+
+        /* Estilo para o formulário de cadastro */
+        #register {
+            background-color: #ffffff;
+            padding: 40px;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            margin: 20px auto;
+            width: 80%;
+            max-width: 500px;
+        }
+
+        #register h2 {
+            text-align: center;
+            color: #00bf63;
+        }
+
+        #register input {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+
+        #register button {
+            width: 100%;
+            padding: 10px;
+            background-color: #00bf63;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        #register button:hover {
+            background-color: #009c57;
+        }
+
+        #message {
+            text-align: center;
+            margin-top: 15px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav id="navbar">
+            <i class="fa-solid fa-calculator" id="nav_logo"> MATH</i>
+
+            <ul id="nav_list">
+                <li class="nav-item active">
+                    <a href="#home">Início</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#menu">Aulas</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#testimonials">Avaliações</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#register">Cadastro</a>
+                </li>
+            </ul>
+
+            <button class="btn-default">
+                Ver Pacotes
+            </button>
+
+            <button id="mobile_btn">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+        </nav>
+
+        <div id="mobile_menu">
+            <ul id="mobile_nav_list">
+                <li class="nav-item">
+                    <a href="#home">Início</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#menu">Aulas</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#testimonials">Avaliações</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#register">Cadastro</a>
+                </li>
+            </ul>
+
+            <button class="btn-default">
+                Ver Pacotes
+            </button>
+        </div>
+    </header>
+
+    <main id="content">
+        <section id="home">
+            <div class="shape"></div>
+            <div id="cta">
+                <h1 class="title">
+                    Agora a Matemática ficou fácil para <span>você</span>!
+                </h1>
+
+                <p class="description">
+                    Domine os conceitos e fique preparado para concursos, vestibulares e OPRM.
+                </p>
+
+                <div id="cta_buttons">
+                    <a href="#" class="btn-default">
+                        Ver Aulas
+                    </a>
+
+                    <a href="tel:+5541996307116" id="phone_button">
+                        <button class="btn-default">
+                            <i class="fa-solid fa-phone"></i>
+                        </button>
+                        +55 (41) 99630-7116
+                    </a>
+                </div>
+
+                <div class="social-media-buttons">
+                    <a href="https://wa.me/+5541996307116">
+                        <i class="fa-brands fa-whatsapp"></i>
+                    </a>
+
+                    <a href="https://www.instagram.com/carol_soaress_/">
+                        <i class="fa-brands fa-instagram"></i>
+                    </a>
+
+                    <a href="https://facebook.com">
+                        <i class="fa-brands fa-facebook"></i>
+                    </a>
+                </div>
+            </div>
+
+            <div id="banner">
+                <img src="src/images/hero.png" alt="Matemática para Todos">
+            </div>
+        </section>
+
+        <section id="menu">
+            <h2 class="section-title">Aulas</h2>
+            <h3 class="section-subtitle">Nossos cursos</h3>
+
+            <div id="dishes">
+                <div class="dish">
+                    <div class="dish-heart">
+                        <i class="fa-solid fa-heart"></i>
+                    </div>
+
+                    <img src="src/images/math1.png" class="dish-image" alt="Básico de Matemática">
+
+                    <h3 class="dish-title">
+                        Básico de Matemática
+                    </h3>
+
+                    <span class="dish-description">
+                        Conceitos fundamentais para alunos de ensino médio e vestibular.
+                    </span>
+
+                    <div class="dish-rate">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <span>(500+)</span>
+                    </div>
+
+                    <div class="dish-price">
+                        <h4>R$150,00</h4>
+                        <button class="btn-default">
+                            <i class="fa-solid fa-basket-shopping"></i>
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Adicione as outras aulas com o mesmo formato -->
+            </div>
+        </section>
+
+        <section id="testimonials">
+            <img src="src/images/teacher.png" id="testimonial_chef" alt="Professor">
+
+            <div id="testimonials_content">
+                <h2 class="section-title">
+                    Depoimentos
+                </h2>
+                <h3 class="section-subtitle">
+                    O que os estudantes falam sobre nós
+                </h3>
+
+                <div id="feedbacks">
+                    <div class="feedback">
+                        <img src="src/images/avatar.png" class="feedback-avatar" alt="Avatar">
+
+                        <div class="feedback-content">
+                            <p>
+                                Fulana de Tal
+                                <span>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                </span>
+                            </p>
+                            <p>
+                                "Excelente curso de matemática, consegui entender tudo com clareza!"
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Mais feedbacks -->
+                </div>
+
+                <button class="btn-default">
+                    Ver mais avaliações
+                </button>
+            </div>
+        </section>
+
+        <!-- Seção de Cadastro -->
+        <section id="register">
+            <h2 class="section-title">Cadastro</h2>
+            <div id="register">
+                <h2>Cadastre-se</h2>
+                <form id="register_form">
+                    <input type="email" id="email" placeholder="Email" required>
+                    <input type="password" id="password" placeholder="Senha" required>
+                    <button type="submit">Cadastrar</button>
+                </form>
+                <div id="message"></div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <img src="src/images/wave.svg" alt="Wave Background">
+
+        <div id="footer_items">
+            <span id="copyright">
+                &copy 2024 Carolina
